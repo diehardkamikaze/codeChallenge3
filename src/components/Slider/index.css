@@ -1,0 +1,46 @@
+.Slider {
+  position: relative;
+  font-family: sans-serif;
+  text-align: center;
+  width: 200px;
+  height: 150px;
+  margin: auto;
+}
+
+.Slide {
+  position: absolute;
+  width: 150px;
+  height: 160px;
+  padding: 30px;
+  border: 10px solid grey;
+  border-bottom-left-radius: 50%;
+  transition: transform 0.5s linear;
+}
+
+.anime {
+  transform: translate(-200px);
+}
+
+.anime-small {
+  transform: translate(-20px);
+}
+
+.anime-fade {
+  animation: fadeIn 1s;
+}
+
+.next-slide {
+  position: absolute;
+  left: 280px;
+  top: 45%;
+}
+
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
