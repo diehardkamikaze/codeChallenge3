@@ -2,6 +2,7 @@ import "./index.css";
 import { useState, useCallback } from "react";
 import Slide from "../Slide";
 import { cycled_slice, throttle } from '../../utils';
+import svg_slider from '../../assets/right_arrow.svg'
 
 
 const VISIBLE_SLIDES_COUNT = 3;
@@ -46,7 +47,7 @@ export default function Slider({slides}) {
             />
           );
         })}
-        {slides.length > 1 && <div className="next-slide" onClick={leftHandler}>право</div>}
+        {slides.length > 1 && <div className="next-slide" onClick={leftHandler}><img width="50" src={svg_slider} /></div>}
       </div>
    </>
   );

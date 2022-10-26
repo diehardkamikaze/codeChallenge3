@@ -1,0 +1,17 @@
+.user-board {
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 6px;
+  margin: auto;
+  width: 300px;
+}
+
+.login {
+  font-weight: bold;  
+  font-size: 18px
+}
+
+.marked {
+  background-color: yellow;
+  color: blue;
+}
